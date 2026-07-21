@@ -1,6 +1,8 @@
 name: Update GitHub Activity
 
 on:
+  push:
+    branches: [ main, master ]
   schedule:
     - cron: "0 */12 * * *" # Runs every 12 hours
   workflow_dispatch:

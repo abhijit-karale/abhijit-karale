@@ -15,7 +15,7 @@
     <a href="mailto:abhijitkarale8@gmail.com"><img src="https://img.shields.io/badge/Email-d5d5d5?style=for-the-badge&logo=gmail&logoColor=0A0209" /></a>
     <a href="https://www.linkedin.com/in/abhijit-karale-rtl-dv/"><img src="https://custom-icon-badges.demolab.com/badge/LinkedIn-0A0209?style=for-the-badge&logo=linkedin-white&logoColor=d5d5d5" /></a>
     <a href="https://leetcode.com/u/abhijitkarale8/"><img src="https://img.shields.io/badge/LeetCode-d5d5d5?style=for-the-badge&logo=leetcode&logoColor=0A0209" /></a>
-    <a href="⚠️YOUR_RESUME_DRIVE_LINK_HERE"><img src="https://img.shields.io/badge/Resume-d5d5d5?style=for-the-badge&logo=google-drive&logoColor=0A0209" /></a>
+    <a href="https://drive.google.com/file/d/1X5ZCjU_Zwzafp7m4uBq5_5gZj1Chuy6W/view?usp=drive_link"><img src="https://img.shields.io/badge/Resume-d5d5d5?style=for-the-badge&logo=google-drive&logoColor=0A0209" /></a>
 </div>
 
 <br/>

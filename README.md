@@ -37,25 +37,25 @@
     <tr>
         <td width="50%" valign="top">
             <h3>🧰 RTL Design & Verification</h3>
-            <img title="SystemVerilog" src="https://img.shields.io/badge/SystemVerilog-0A192F?style=for-the-badge&logoColor=64FFDA" height="28" />
-            <img title="Verilog" src="https://img.shields.io/badge/Verilog-0A192F?style=for-the-badge&logoColor=64FFDA" height="28" />
-            <img title="VHDL" src="https://img.shields.io/badge/VHDL-0A192F?style=for-the-badge&logoColor=64FFDA" height="28" />
-            <img title="UVM" src="https://img.shields.io/badge/UVM-0A192F?style=for-the-badge&logoColor=64FFDA" height="28" />
-            <img title="SVA" src="https://img.shields.io/badge/SVA%20(Assertions)-0A192F?style=for-the-badge&logoColor=64FFDA" height="28" />
+            <img title="SystemVerilog" src="https://custom-icon-badges.demolab.com/badge/SystemVerilog-0A192F?style=for-the-badge&logo=file-code&logoColor=64FFDA" height="28" />
+            <img title="Verilog" src="https://custom-icon-badges.demolab.com/badge/Verilog-0A192F?style=for-the-badge&logo=file-code&logoColor=64FFDA" height="28" />
+            <img title="VHDL" src="https://custom-icon-badges.demolab.com/badge/VHDL-0A192F?style=for-the-badge&logo=file-code&logoColor=64FFDA" height="28" />
+            <img title="UVM" src="https://custom-icon-badges.demolab.com/badge/UVM-0A192F?style=for-the-badge&logo=shield-check&logoColor=64FFDA" height="28" />
+            <img title="SVA" src="https://custom-icon-badges.demolab.com/badge/SVA%20(Assertions)-0A192F?style=for-the-badge&logo=shield-check&logoColor=64FFDA" height="28" />
             <br/><br/>
             <h3>🔌 Protocols & Architectures</h3>
-            <img title="AMBA AXI4" src="https://img.shields.io/badge/AMBA%20AXI4-0A192F?style=for-the-badge&logoColor=64FFDA" height="28" />
-            <img title="AMBA APB" src="https://img.shields.io/badge/AMBA%20APB-0A192F?style=for-the-badge&logoColor=64FFDA" height="28" />
-            <img title="RISC-V" src="https://img.shields.io/badge/RISC--V%20ISA-0A192F?style=for-the-badge&logoColor=64FFDA" height="28" />
-            <img title="I2C/SPI/UART" src="https://img.shields.io/badge/I2C%20/%20SPI%20/%20UART-0A192F?style=for-the-badge&logoColor=64FFDA" height="28" />
+            <img title="AMBA AXI4" src="https://img.shields.io/badge/AMBA%20AXI4-0A192F?style=for-the-badge&logo=arm&logoColor=64FFDA" height="28" />
+            <img title="AMBA APB" src="https://img.shields.io/badge/AMBA%20APB-0A192F?style=for-the-badge&logo=arm&logoColor=64FFDA" height="28" />
+            <img title="RISC-V" src="https://img.shields.io/badge/RISC--V%20ISA-0A192F?style=for-the-badge&logo=riscv&logoColor=64FFDA" height="28" />
+            <img title="I2C/SPI/UART" src="https://custom-icon-badges.demolab.com/badge/I2C%20/%20SPI%20/%20UART-0A192F?style=for-the-badge&logo=circuit-board&logoColor=64FFDA" height="28" />
         </td>
         <td width="50%" valign="top">
             <h3>🏭 EDA Tools & Software</h3>
-            <img title="Cadence Xcelium" src="https://img.shields.io/badge/Cadence%20Xcelium-0A192F?style=for-the-badge&logoColor=64FFDA" height="28" />
-            <img title="JasperGold" src="https://img.shields.io/badge/JasperGold%20Formal-0A192F?style=for-the-badge&logoColor=64FFDA" height="28" />
-            <img title="ModelSim" src="https://img.shields.io/badge/ModelSim-0A192F?style=for-the-badge&logoColor=64FFDA" height="28" />
-            <img title="Verilator" src="https://img.shields.io/badge/Verilator-0A192F?style=for-the-badge&logoColor=64FFDA" height="28" />
-            <img title="Yosys" src="https://img.shields.io/badge/Yosys-0A192F?style=for-the-badge&logoColor=64FFDA" height="28" />
+            <img title="Cadence Xcelium" src="https://custom-icon-badges.demolab.com/badge/Cadence%20Xcelium-0A192F?style=for-the-badge&logo=server&logoColor=64FFDA" height="28" />
+            <img title="JasperGold" src="https://custom-icon-badges.demolab.com/badge/JasperGold%20Formal-0A192F?style=for-the-badge&logo=shield-check&logoColor=64FFDA" height="28" />
+            <img title="ModelSim" src="https://img.shields.io/badge/ModelSim-0A192F?style=for-the-badge&logo=siemens&logoColor=64FFDA" height="28" />
+            <img title="Verilator" src="https://custom-icon-badges.demolab.com/badge/Verilator-0A192F?style=for-the-badge&logo=terminal&logoColor=64FFDA" height="28" />
+            <img title="Yosys" src="https://custom-icon-badges.demolab.com/badge/Yosys-0A192F?style=for-the-badge&logo=terminal&logoColor=64FFDA" height="28" />
             <br/><br/>
             <h3>💻 Languages & Embedded</h3>
             <img title="C" src="https://img.shields.io/badge/C-0A192F?style=for-the-badge&logo=c&logoColor=64FFDA" height="28" />

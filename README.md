@@ -79,12 +79,6 @@
 ## 📈 GitHub Telemetry & Stats
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=abhijit-karale&theme=dracula&no-frame=true&no-bg=true&margin-w=15" alt="GitHub Trophies" width="100%" />
-</div>
-
-<br/>
-
-<div align="center">
   <img src="https://metrics.lecoq.io/abhijit-karale" alt="GitHub Metrics" width="100%" />
 </div>
 

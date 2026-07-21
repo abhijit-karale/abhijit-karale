@@ -64,24 +64,31 @@
         </td>
     </tr>
 </table>
-<img src = "https://raw.githubusercontent.com/HighAmbition211/HighAmbition211/auxiliary/others/charts.gif" width = 35px height = 35px><img width = 15px> GitHub Stats
+### <img src="https://raw.githubusercontent.com/HighAmbition211/HighAmbition211/auxiliary/others/charts.gif" width="35" height="35" align="center"> GitHub Stats
+
 <div align="center">
-Table
-<img align="center" alt="GitHub Stats" src="https://gh-readme-profile.vercel.app/api?username=abhijit-karale&theme=neon-dark&border_width=0&border_radius=15.2&hide_border=true" />	<img align="center" alt="GitHub Streak" src="https://nirzak-streak-stats.koyeb.app?user=abhijit-karale&theme=vision-friendly-dark&hide_border=true&border_radius=15.2&mode=weekly&card_width=500" />
+  <img align="center" alt="GitHub Stats" src="https://gh-readme-profile.vercel.app/api?username=abhijit-karale&theme=neon-dark&border_width=0&border_radius=15.2&hide_border=true" />
+  <img align="center" alt="GitHub Streak" src="https://nirzak-streak-stats.koyeb.app?user=abhijit-karale&theme=vision-friendly-dark&hide_border=true&border_radius=15.2&mode=weekly&card_width=500" />
 </div>
+
 <div align="center">
-Table
-https://github.com/ashutosh00710/github-readme-activity-graph
+  <a href="https://github.com/ashutosh00710/github-readme-activity-graph">
+    <img alt="Abhijit's Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=abhijit-karale&theme=react-dark&hide_border=true" width="100%" />
+  </a>
 </div>
-📊 Contribution Activity
-42 contributions in the last year · First repository created July 15, 2026
+### 📊 Contribution Activity
+
+*42 contributions in the last year · First repository created July 15, 2026*
+
 <div align="center">
-Table
-Period	Activity
-July 2026	Created first repository abhijit-karale
-2026	🌱 Starting the journey in RTL/DV
-2025	—
-2024	—
+
+| Period | Activity |
+| :--- | :--- |
+| **July 2026** | Created first repository `abhijit-karale` |
+| **2026** | 🌱 Starting the journey in RTL/DV |
+| **2025** | — |
+| **2024** | — |
+
 </div>
 🌐 Connect with Me
 <div>

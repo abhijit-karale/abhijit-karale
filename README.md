@@ -19,6 +19,16 @@
 
 <br/>
 
+## 📌 Featured Silicon IP & Projects 
+
+<div align="center">
+  <a href="https://github.com/abhijit-karale?tab=repositories">
+    <img src="https://raw.githubusercontent.com/abhijit-karale/abhijit-karale/main/assets/generated/projects-constellation.svg" alt="3D Projects Constellation" width="100%" />
+  </a>
+</div>
+
+<br/>
+
 ## 🔬 Core Competencies & Skills
 
 <table>
@@ -55,15 +65,23 @@
     </tr>
 </table>
 
-## 📌 Featured Silicon IP & Projects 
+<br/>
+
+## 🌌 3D GitHub Contributions
 
 <div align="center">
-  <a href="https://github.com/abhijit-karale?tab=repositories">
-    <img src="https://raw.githubusercontent.com/abhijit-karale/abhijit-karale/main/assets/generated/projects-constellation.svg" alt="3D Projects Constellation" width="100%" />
-  </a>
+  <img src="https://raw.githubusercontent.com/abhijit-karale/abhijit-karale/main/profile-3d-contrib/profile-night-view.svg" alt="3D GitHub Contributions" width="100%" />
 </div>
 
+<br/>
+
 ## 📈 GitHub Telemetry & Stats
+
+<div align="center">
+  <img src="https://metrics.lecoq.io/abhijit-karale" alt="GitHub Metrics" width="100%" />
+</div>
+
+<br/>
 
 <table>
     <tr>
@@ -88,17 +106,6 @@
         </td>
     </tr>
 </table>
-
-<div align="center">
-  <img src="https://metrics.lecoq.io/abhijit-karale" alt="GitHub Metrics" width="100%" />
-</div>
-
-<br/>
-
-<h3 align="center"> 🌌 3D GitHub Contributions </h3>
-<div align="center">
-  <img src="https://raw.githubusercontent.com/abhijit-karale/abhijit-karale/main/profile-3d-contrib/profile-night-view.svg" alt="3D GitHub Contributions" width="100%" />
-</div>
 
 <br/>
 

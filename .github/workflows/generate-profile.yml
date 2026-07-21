@@ -1,45 +1,25 @@
-name: Generate Profile SVGs
-
+name: Update README
 on:
   schedule:
-    - cron: '0 */12 * * *'  # Runs every 12 hours
+    - cron: '0 0 * * *'  # Daily at midnight
+  workflow_dispatch:  # Manual trigger
   push:
-    paths:
-      - 'config.yml'
-      - 'generator/**'
-      - '.github/workflows/generate-profile.yml'
-  workflow_dispatch:
-
-permissions:
-  contents: write
+    branches: [main]
 
 jobs:
-  generate:
+  update:
     runs-on: ubuntu-latest
-    
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install dependencies
+      - uses: actions/checkout@v3
+      - name: Update README with latest repos
         run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Generate SVGs with real GitHub data
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python -m generator.main
-
-      - name: Commit and push updated SVGs
+          # Add a script here to fetch your latest repos via GitHub API
+          # and regenerate README.md
+          echo "README updated at $(date)" >> README.md
+      - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git
+          git add README.md
+          git commit -m "Auto-update README" || exit 0
+          git push

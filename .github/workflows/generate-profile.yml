@@ -1,25 +1,154 @@
-name: Update README
+name: Auto-Update README
+
 on:
   schedule:
-    - cron: '0 0 * * *'  # Daily at midnight
-  workflow_dispatch:  # Manual trigger
+    - cron: '0 0 * * *'  # Runs daily at midnight UTC
+  workflow_dispatch:      # Allows manual trigger from Actions tab
   push:
-    branches: [main]
+    branches: [ main, master ]
+
+permissions:
+  contents: write
 
 jobs:
-  update:
+  update-readme:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v3
-      - name: Update README with latest repos
-        run: |
-          # Add a script here to fetch your latest repos via GitHub API
-          # and regenerate README.md
-          echo "README updated at $(date)" >> README.md
-      - name: Commit changes
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add README.md
-          git commit -m "Auto-update README" || exit 0
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Install dependencies
+      run: |
+        pip install requests
+
+    - name: Fetch latest repos and update README
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_USERNAME: abhijit-karale
+      run: |
+        cat > update_readme.py << 'PYEOF'
+import requests
+import os
+import re
+from datetime import datetime, timezone
+
+USERNAME = os.environ.get('GITHUB_USERNAME', 'abhijit-karale')
+TOKEN = os.environ.get('GITHUB_TOKEN')
+
+headers = {
+    'Authorization': f'Bearer {TOKEN}',
+    'Accept': 'application/vnd.github.v3+json',
+    'X-GitHub-Api-Version': '2022-11-28'
+}
+
+# Fetch user's repositories
+url = f'https://api.github.com/users/{USERNAME}/repos?sort=updated&per_page=100'
+response = requests.get(url, headers=headers)
+
+if response.status_code != 200:
+    print(f"Error fetching repos: {response.status_code}")
+    print(response.text)
+    exit(1)
+
+repos = response.json()
+
+# Filter out the profile repo itself and forks, sort by updated date
+my_repos = [r for r in repos if not r.get('fork', False) and r.get('name') != USERNAME]
+my_repos.sort(key=lambda x: x.get('updated_at', ''), reverse=True)
+
+# Take top 6 repos
+top_repos = my_repos[:6]
+
+print(f"Found {len(top_repos)} repositories to display")
+for r in top_repos:
+    print(f"  - {r['name']}")
+
+# Generate repo table HTML
+repo_rows = []
+for i in range(0, len(top_repos), 2):
+    row_repos = top_repos[i:i+2]
+
+    cells = []
+    for repo in row_repos:
+        cell = '<td width="50%" valign="top">
+'
+        cell += f'            <a href="{repo["html_url"]}"><img align="center" src="https://github-readme-stats-lilac-chi-70.vercel.app/api/pin/?username={USERNAME}&repo={repo["name"]}&theme=vision-friendly-dark" /></a>
+'
+        cell += '        </td>'
+        cells.append(cell)
+
+    # Fill empty cell if odd number
+    while len(cells) < 2:
+        cells.append('<td width="50%"></td>')
+
+    row = '<tr>
+        ' + cells[0] + '
+        ' + cells[1] + '
+    </tr>'
+    repo_rows.append(row)
+
+repo_table = '<div align="center">
+<table>
+    ' + '
+'.join(repo_rows) + '
+</table>
+</div>'
+
+# Read existing README
+with open('README.md', 'r', encoding='utf-8') as f:
+    content = f.read()
+
+# Replace repo table section
+pattern = r'<!-- REPO_TABLE_START -->.*?<!-- REPO_TABLE_END -->'
+replacement = f'<!-- REPO_TABLE_START -->
+<!-- Auto-updated daily via GitHub Actions -->
+{repo_table}
+<!-- REPO_TABLE_END -->'
+
+if re.search(pattern, content, re.DOTALL):
+    content = re.sub(pattern, replacement, content, flags=re.DOTALL)
+    print("Updated existing REPO_TABLE section")
+else:
+    # If markers dont exist, insert before first table tag
+    content = content.replace('<table>', f'<!-- REPO_TABLE_START -->
+<!-- Auto-updated daily via GitHub Actions -->
+{repo_table}
+<!-- REPO_TABLE_END -->
+
+<table>', 1)
+    print("Inserted new REPO_TABLE section")
+
+# Update timestamp
+now = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
+content = re.sub(r'<!-- LAST_UPDATED: .*? -->', f'<!-- LAST_UPDATED: {now} -->', content)
+
+with open('README.md', 'w', encoding='utf-8') as f:
+    f.write(content)
+
+print(f"Last updated: {now}")
+PYEOF
+        python update_readme.py
+
+    - name: Configure Git
+      run: |
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git config --global user.name "github-actions[bot]"
+
+    - name: Commit and push changes
+      run: |
+        git add README.md
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Auto-update: Refresh pinned repositories [$(date -u +%Y-%m-%d %H:%M UTC)]"
           git push
+        fi

@@ -1,15 +1,14 @@
 <div align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=Righteous&size=35&center=true&vCenter=true&width=1000&height=70&duration=2000&lines=Hi+There!+👋;+I'm+Abhijit+Karale+👨‍💻;RTL+Design+%26+Verification+Engineer+👨‍🎓" />
+  <img src="https://raw.githubusercontent.com/abhijit-karale/abhijit-karale/main/assets/generated/galaxy-header.svg" alt="Galaxy Header" width="100%" />
 </div>
+
 <div align="center">
-    <img src="https://raw.githubusercontent.com/HighAmbition211/HighAmbition211/auxiliary/others/colorful_line.gif" width="100%">
+  <br/>
+  <i>
+    Passionate <b>RTL Design & Verification Engineer</b> with a strong background in embedded systems and hardware design. I specialize in <b>SystemVerilog, UVM, and AMBA protocols (AXI/APB)</b> to architect, verify, and validate complex SoC subsystems. From designing pipelined RISC-V processors to proving exhaustive formal properties with JasperGold, I am dedicated to bridging the gap between gate-level RTL and silicon reality.
+  </i>
+  <br/><br/>
 </div>
-
-<h3 align="center"> 🛠️ Silicon-Grade Engineer | ASIC & SoC Design & Verification </h3>
-
-<p align="center">
-  Passionate <b>RTL Design & Verification Engineer</b> with a strong background in embedded systems and hardware design. I specialize in <b>SystemVerilog, UVM, and AMBA protocols (AXI/APB)</b> to architect, verify, and validate complex SoC subsystems. From designing pipelined RISC-V processors to proving exhaustive formal properties with JasperGold, I am dedicated to bridging the gap between gate-level RTL and silicon reality.
-</p>
 
 <div align="center">
     <a href="mailto:abhijitkarale8@gmail.com"><img src="https://img.shields.io/badge/Email-d5d5d5?style=for-the-badge&logo=gmail&logoColor=0A0209" /></a>

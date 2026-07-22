@@ -63,7 +63,7 @@
 
   <!-- Block 5: AMS/UPF -->
   <rect x="510" y="130" width="310" height="90" class="block b5" />
-  <text x="665" y="165" class="text-title t5">Low Power & AMS</text>
+  <text x="665" y="165" class="text-title t5">Low Power &amp; AMS</text>
   <text x="665" y="185" class="text-sub t5">UPF Verification</text>
 
 </svg>

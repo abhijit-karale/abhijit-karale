@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="250" viewBox="0 0 850 250">
+  <defs>
+    <style>
+      .bg { fill: #0A192F; }
+      .grid { stroke: #1c1c38; stroke-width: 1; stroke-dasharray: 2 4; opacity: 0.7; }
+      .block { fill: rgba(10, 25, 47, 0.8); stroke-width: 2; opacity: 0; animation: fade-in 0.5s forwards; }
+      .b1 { stroke: #64FFDA; animation-delay: 0.2s; filter: drop-shadow(0 0 6px rgba(100,255,218,0.4)); }
+      .b2 { stroke: #00d4ff; animation-delay: 0.4s; filter: drop-shadow(0 0 6px rgba(0,212,255,0.4)); }
+      .b3 { stroke: #ff00ff; animation-delay: 0.6s; filter: drop-shadow(0 0 6px rgba(255,0,255,0.4)); }
+      .b4 { stroke: #ff9900; animation-delay: 0.8s; filter: drop-shadow(0 0 6px rgba(255,153,0,0.4)); }
+      .b5 { stroke: #f1f5f9; animation-delay: 1.0s; filter: drop-shadow(0 0 6px rgba(241,245,249,0.4)); }
+      
+      .text-title { fill: #f1f5f9; font-family: monospace; font-size: 14px; font-weight: bold; text-anchor: middle; dominant-baseline: middle; opacity: 0; animation: fade-in 0.5s forwards; }
+      .text-sub { fill: #94a3b8; font-family: monospace; font-size: 11px; text-anchor: middle; dominant-baseline: middle; opacity: 0; animation: fade-in 0.5s forwards; }
+      
+      .t1 { animation-delay: 0.2s; }
+      .t2 { animation-delay: 0.4s; }
+      .t3 { animation-delay: 0.6s; }
+      .t4 { animation-delay: 0.8s; }
+      .t5 { animation-delay: 1.0s; }
+      
+      .wire { stroke: #64748b; stroke-width: 1; fill: none; opacity: 0; animation: trace 1s forwards 1.2s; stroke-dasharray: 500; stroke-dashoffset: 500; }
+      
+      @keyframes fade-in { to { opacity: 1; } }
+      @keyframes trace { to { stroke-dashoffset: 0; opacity: 0.6; } }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="250" class="bg" />
+  
+  <!-- Grid -->
+  <path class="grid" d="M 0 50 L 850 50 M 0 100 L 850 100 M 0 150 L 850 150 M 0 200 L 850 200 M 100 0 L 100 250 M 200 0 L 200 250 M 300 0 L 300 250 M 400 0 L 400 250 M 500 0 L 500 250 M 600 0 L 600 250 M 700 0 L 700 250 M 800 0 L 800 250" />
+
+  <!-- Wires -->
+  <path class="wire" d="M 330 125 L 370 125" />
+  <path class="wire" d="M 330 75 L 370 75 L 370 125" />
+  <path class="wire" d="M 330 175 L 370 175 L 370 125" />
+  <path class="wire" d="M 470 125 L 510 125" />
+  <path class="wire" d="M 470 125 L 470 75 L 510 75" />
+  <path class="wire" d="M 470 125 L 470 175 L 510 175" />
+
+  <!-- Blocks -->
+  <!-- Block 1: Interconnect -->
+  <rect x="370" y="30" width="100" height="190" class="block b2" />
+  <text x="420" y="115" class="text-title t2">AMBA</text>
+  <text x="420" y="135" class="text-sub t2">AXI/APB Interconnect</text>
+  
+  <!-- Block 2: RISC-V RTL -->
+  <rect x="30" y="30" width="300" height="90" class="block b1" />
+  <text x="180" y="65" class="text-title t1">RISC-V Core</text>
+  <text x="180" y="85" class="text-sub t1">SystemVerilog RTL</text>
+
+  <!-- Block 3: UVM TB -->
+  <rect x="30" y="130" width="300" height="90" class="block b3" />
+  <text x="180" y="165" class="text-title t3">Verification Env</text>
+  <text x="180" y="185" class="text-sub t3">UVM / Scoreboard</text>
+
+  <!-- Block 4: Formal -->
+  <rect x="510" y="30" width="310" height="90" class="block b4" />
+  <text x="665" y="65" class="text-title t4">Formal Property Checking</text>
+  <text x="665" y="85" class="text-sub t4">JasperGold / SVA</text>
+
+  <!-- Block 5: AMS/UPF -->
+  <rect x="510" y="130" width="310" height="90" class="block b5" />
+  <text x="665" y="165" class="text-title t5">Low Power & AMS</text>
+  <text x="665" y="185" class="text-sub t5">UPF Verification</text>
+
+</svg>

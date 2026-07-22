@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/abhijit-karale/abhijit-karale/main/assets/generated/galaxy-header.svg" alt="Galaxy Header" width="100%" />
+  <img src="https://raw.githubusercontent.com/abhijit-karale/abhijit-karale/main/assets/floorplan-banner.svg" alt="Chip Floorplan Banner" width="100%" />
   <img src="https://raw.githubusercontent.com/abhijit-karale/abhijit-karale/main/assets/waveform.svg" alt="Animated Waveform" width="100%" />
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=64FFDA&background=0A192F00&center=true&vCenter=true&width=600&lines=RTL+Design+%26+Verification+Engineer;SystemVerilog+%7C+UVM+%7C+AMBA+AXI%2FAPB;Building+Silicon-Grade+Verification+Environments" alt="Typing SVG" />
 </div>
@@ -42,16 +42,11 @@
 
 <br/>
 
-## 🗂️ Featured Repositories
+## 🗂️ Verification Dashboard
 
-| Project | Description | Tech Stack | Status |
-|---|---|---|---|
-| [RV32I 5-Stage RISC-V Core](https://github.com/abhijit-karale/rv32i-pipelined-processor) | 5-stage pipelined RV32I, UVM env, 95%+ functional coverage (Xcelium) | SystemVerilog, UVM | ✅ Verified |
-| [AMBA-APB Programmable Timer](https://github.com/abhijit-karale/apb-timer) | APB3-compliant timer, interrupt + PSLVERR handling, 14/14 assertions passing | SystemVerilog, SVA | ✅ Verified |
-| [AXI4-Lite Slave Controller](https://github.com/abhijit-karale/axi4-lite-slave) | AXI4-Lite compliant slave with self-checking TB | SystemVerilog | ✅ Verified |
-| [UART Controller](https://github.com/abhijit-karale/uart-controller) | Configurable baud, TX/RX FSM, full TB coverage | Verilog | ✅ Verified |
-| [Synchronous FIFO](https://github.com/abhijit-karale/sync-fifo) | Parameterized sync FIFO with full/empty flags | Verilog | ✅ Verified |
-| [Sparsity-Aware MatMul Engine](https://github.com/abhijit-karale/sparsity-matmul-engine) | LLM inference accelerator, 5 submodules, patentable design | SystemVerilog | 🔧 In Progress |
+<div align="center">
+  <img src="https://raw.githubusercontent.com/abhijit-karale/abhijit-karale/main/assets/verification-dashboard.svg" alt="Verification Dashboard" width="100%" />
+</div>
 
 <br/>
 

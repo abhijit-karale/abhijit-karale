@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="300" viewBox="0 0 850 300">
+  <defs>
+    <style>
+      .bg { fill: #050510; rx: 8; stroke: #1e293b; stroke-width: 2; }
+      .header-bg { fill: #1e293b; rx: 8; }
+      .text-head { fill: #f1f5f9; font-family: monospace; font-size: 14px; font-weight: bold; }
+      .text-row { fill: #94a3b8; font-family: monospace; font-size: 13px; }
+      .text-pass { fill: #64FFDA; font-family: monospace; font-size: 13px; font-weight: bold; }
+      .text-warn { fill: #ff9900; font-family: monospace; font-size: 13px; font-weight: bold; }
+      
+      .cov-bg { fill: #1c1c38; rx: 3; }
+      .cov-bar { fill: #00d4ff; rx: 3; }
+      
+      .divider { stroke: #1e293b; stroke-width: 1; }
+    </style>
+  </defs>
+
+  <rect width="850" height="300" class="bg" />
+  
+  <!-- Header Bar -->
+  <rect x="0" y="0" width="850" height="40" class="header-bg" style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;" />
+  <circle cx="20" cy="20" r="5" fill="#ef4444" />
+  <circle cx="40" cy="20" r="5" fill="#eab308" />
+  <circle cx="60" cy="20" r="5" fill="#22c55e" />
+  <text x="80" y="25" class="text-head">xrun -f run.f -cov -assert | Verification Dashboard</text>
+  
+  <!-- Table Headers -->
+  <text x="30" y="70" class="text-head">IP / SUBSYSTEM</text>
+  <text x="280" y="70" class="text-head">METHODOLOGY</text>
+  <text x="450" y="70" class="text-head">FUNC. COVERAGE</text>
+  <text x="650" y="70" class="text-head">ASSERTIONS</text>
+  <text x="760" y="70" class="text-head">STATUS</text>
+  
+  <path class="divider" d="M 0 85 L 850 85" />
+  
+  <!-- Row 1 -->
+  <text x="30" y="115" class="text-row">RV32I 5-Stage Core</text>
+  <text x="280" y="115" class="text-row">UVM / Coverage</text>
+  <rect x="450" y="105" width="120" height="10" class="cov-bg" />
+  <rect x="450" y="105" width="114" height="10" class="cov-bar" />
+  <text x="580" y="115" class="text-row">95%</text>
+  <text x="650" y="115" class="text-row">50/50</text>
+  <text x="760" y="115" class="text-pass">PASS</text>
+
+  <!-- Row 2 -->
+  <text x="30" y="145" class="text-row">AMBA-APB Timer</text>
+  <text x="280" y="115" class="text-row" y="145">SVA / Scoreboard</text>
+  <rect x="450" y="135" width="120" height="10" class="cov-bg" />
+  <rect x="450" y="135" width="120" height="10" class="cov-bar" />
+  <text x="580" y="145" class="text-row">100%</text>
+  <text x="650" y="145" class="text-row">14/14</text>
+  <text x="760" y="145" class="text-pass">PASS</text>
+
+  <!-- Row 3 -->
+  <text x="30" y="175" class="text-row">AXI4-Lite Slave</text>
+  <text x="280" y="175" class="text-row">Self-Checking TB</text>
+  <rect x="450" y="165" width="120" height="10" class="cov-bg" />
+  <rect x="450" y="165" width="108" height="10" class="cov-bar" />
+  <text x="580" y="175" class="text-row">90%</text>
+  <text x="650" y="175" class="text-row">20/20</text>
+  <text x="760" y="175" class="text-pass">PASS</text>
+
+  <!-- Row 4 -->
+  <text x="30" y="205" class="text-row">UART Controller</text>
+  <text x="280" y="205" class="text-row">Directed Tests</text>
+  <rect x="450" y="195" width="120" height="10" class="cov-bg" />
+  <rect x="450" y="195" width="120" height="10" class="cov-bar" />
+  <text x="580" y="205" class="text-row">100%</text>
+  <text x="650" y="205" class="text-row">15/15</text>
+  <text x="760" y="205" class="text-pass">PASS</text>
+
+  <!-- Row 5 -->
+  <text x="30" y="235" class="text-row">Sync FIFO</text>
+  <text x="280" y="235" class="text-row">Directed Tests</text>
+  <rect x="450" y="225" width="120" height="10" class="cov-bg" />
+  <rect x="450" y="225" width="120" height="10" class="cov-bar" />
+  <text x="580" y="235" class="text-row">100%</text>
+  <text x="650" y="235" class="text-row">10/10</text>
+  <text x="760" y="235" class="text-pass">PASS</text>
+
+  <!-- Row 6 -->
+  <text x="30" y="265" class="text-row">MatMul Engine</text>
+  <text x="280" y="265" class="text-row">SystemVerilog TB</text>
+  <rect x="450" y="255" width="120" height="10" class="cov-bg" />
+  <rect x="450" y="255" width="72" height="10" class="cov-bar" />
+  <text x="580" y="265" class="text-row">60%</text>
+  <text x="650" y="265" class="text-row">5/5</text>
+  <text x="760" y="265" class="text-warn">WIP</text>
+
+</svg>

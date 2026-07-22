@@ -98,6 +98,7 @@ def generate(args):
         "stats-card.svg": builder.render_stats_card(),
         "tech-stack.svg": builder.render_tech_stack(),
         "projects-constellation.svg": builder.render_projects_constellation(),
+        "verification-dashboard.svg": builder.render_verification_dashboard(),
     }
 
     for filename, content in svgs.items():

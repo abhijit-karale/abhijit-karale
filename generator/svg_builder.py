@@ -1,6 +1,6 @@
 """SVG Builder — orchestrator connecting config, stats, and templates."""
 
-from generator.templates import galaxy_header, stats_card, tech_stack, projects_constellation
+from generator.templates import galaxy_header, stats_card, tech_stack, projects_constellation, verification_dashboard
 
 
 class SVGBuilder:
@@ -48,5 +48,11 @@ class SVGBuilder:
         return projects_constellation.render(
             projects=self.projects,
             galaxy_arms=self.galaxy_arms,
+            theme=self.theme,
+        )
+
+    def render_verification_dashboard(self) -> str:
+        return verification_dashboard.render(
+            projects=self.projects,
             theme=self.theme,
         )

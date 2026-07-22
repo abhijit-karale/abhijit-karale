@@ -50,6 +50,13 @@ projects:
     arm: 1
     icon: "🔬"
     description: "5-stage pipelined RISC-V processor in Verilog with a full UVM environment; 95%+ functional coverage on Cadence Xcelium."
+    verification:
+      name: "RV32I 5-Stage Core"
+      methodology: "UVM / Coverage"
+      coverage: 95
+      assertions_pass: 50
+      assertions_total: 50
+      status: "PASS"
   - repo: "abhijit-karale/risc-processor-asic-flow"
     arm: 0
     icon: "⚙️"
@@ -58,18 +65,46 @@ projects:
     arm: 2
     icon: "🔌"
     description: "APB-compliant slave peripheral with address decoding and register mapping, modeled as an IDLE/SETUP/ACCESS FSM."
+    verification:
+      name: "AMBA-APB Timer"
+      methodology: "SVA / Scoreboard"
+      coverage: 100
+      assertions_pass: 14
+      assertions_total: 14
+      status: "PASS"
   - repo: "abhijit-karale/uart-controller-rtl"
     arm: 0
     icon: "📡"
     description: "Configurable UART TX/RX with variable baud rates and parity, verified with SystemVerilog protocol-timing assertions."
+    verification:
+      name: "UART Controller"
+      methodology: "Directed Tests"
+      coverage: 100
+      assertions_pass: 15
+      assertions_total: 15
+      status: "PASS"
   - repo: "abhijit-karale/sync-async-fifo"
     arm: 1
     icon: "⏱️"
     description: "Parameterizable sync/async FIFOs with Gray-code pointer synchronization for safe clock-domain crossing."
+    verification:
+      name: "Sync FIFO"
+      methodology: "Directed Tests"
+      coverage: 100
+      assertions_pass: 10
+      assertions_total: 10
+      status: "PASS"
   - repo: "abhijit-karale/formal-memory-controller"
     arm: 1
     icon: "🧠"
     description: "Memory controller with SVA properties proved exhaustively in JasperGold: address decode, no-read-before-write, reset."
+    verification:
+      name: "MatMul Engine"
+      methodology: "SystemVerilog TB"
+      coverage: 60
+      assertions_pass: 5
+      assertions_total: 5
+      status: "WIP"
 
 theme:
   void: "#050510"

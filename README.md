@@ -105,11 +105,7 @@
 
 ## 📈 GitHub Telemetry & Stats
 
-<div align="center">
-  <img src="https://metrics.lecoq.io/abhijit-karale" alt="GitHub Metrics" width="100%" />
-</div>
 
-<br/>
 
 <table>
     <tr>

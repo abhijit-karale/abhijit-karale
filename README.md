@@ -8,6 +8,11 @@
     Passionate <b>RTL Design & Verification Engineer</b> with a strong background in embedded systems and hardware design. I specialize in <b>SystemVerilog, UVM, and AMBA protocols (AXI/APB)</b> to architect, verify, and validate complex SoC subsystems. From designing pipelined RISC-V processors to proving exhaustive formal properties with JasperGold, I am dedicated to bridging the gap between gate-level RTL and silicon reality.
   </i>
   <br/><br/>
+  <div align="center">
+    <img src="https://img.shields.io/badge/Functional%20Coverage-95%25-64FFDA?style=for-the-badge&logo=checkmarx&logoColor=0A192F" />
+    <img src="https://img.shields.io/badge/SVA%20Assertions-14%2F14%20Passing-64FFDA?style=for-the-badge&logo=checkmarx&logoColor=0A192F" />
+  </div>
+  <br/>
 </div>
 
 <div align="center">
@@ -28,6 +33,19 @@
     <img src="https://raw.githubusercontent.com/abhijit-karale/abhijit-karale/main/assets/generated/projects-constellation.svg" alt="3D Projects Constellation" width="100%" />
   </a>
 </div>
+
+<br/>
+
+## 🗂️ Featured Repositories
+
+| Project | Description | Tech Stack | Status |
+|---|---|---|---|
+| [RV32I 5-Stage RISC-V Core](https://github.com/abhijit-karale/rv32i-pipelined-processor) | 5-stage pipelined RV32I, UVM env, 95%+ functional coverage (Xcelium) | SystemVerilog, UVM | ✅ Verified |
+| [AMBA-APB Programmable Timer](https://github.com/abhijit-karale/apb-timer) | APB3-compliant timer, interrupt + PSLVERR handling, 14/14 assertions passing | SystemVerilog, SVA | ✅ Verified |
+| [AXI4-Lite Slave Controller](https://github.com/abhijit-karale/axi4-lite-slave) | AXI4-Lite compliant slave with self-checking TB | SystemVerilog | ✅ Verified |
+| [UART Controller](https://github.com/abhijit-karale/uart-controller) | Configurable baud, TX/RX FSM, full TB coverage | Verilog | ✅ Verified |
+| [Synchronous FIFO](https://github.com/abhijit-karale/sync-fifo) | Parameterized sync FIFO with full/empty flags | Verilog | ✅ Verified |
+| [Sparsity-Aware MatMul Engine](https://github.com/abhijit-karale/sparsity-matmul-engine) | LLM inference accelerator, 5 submodules, patentable design | SystemVerilog | 🔧 In Progress |
 
 <br/>
 
@@ -66,6 +84,14 @@
         </td>
     </tr>
 </table>
+
+<br/>
+
+## 🎓 Certifications
+- Maven Silicon — VLSI SoC Design
+- ChipXpert — RTL Design & Verification, RTL to GDS
+- IIT BHU Varanasi — Semiconductor Technology
+- The Silicon Sandbox — Advanced RTL Design & Verification
 
 <br/>
 

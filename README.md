@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="https://github.com/abhijit-karale/abhijit-karale/raw/main/assets/generated/floorplan-banner.svg?v=5" alt="Chip Floorplan Banner" width="100%" />
-  <img src="https://github.com/abhijit-karale/abhijit-karale/raw/main/assets/waveform.svg?v=2" alt="Animated Waveform" width="100%" />
+  <img src="https://raw.githubusercontent.com/abhijit-karale/abhijit-karale/main/assets/generated/floorplan-banner.svg?v=6" alt="Chip Floorplan Banner" width="100%" />
+  <img src="https://raw.githubusercontent.com/abhijit-karale/abhijit-karale/main/assets/waveform.svg?v=3" alt="Animated Waveform" width="100%" />
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=64FFDA&background=0A192F00&center=true&vCenter=true&width=600&lines=RTL+Design+%26+Verification+Engineer;SystemVerilog+%7C+UVM+%7C+AMBA+AXI%2FAPB;Building+Silicon-Grade+Verification+Environments" alt="Typing SVG" />
 </div>
 
@@ -11,7 +11,7 @@
   </i>
   <br/><br/>
   <div align="center">
-    <img src="https://github.com/abhijit-karale/abhijit-karale/raw/main/assets/coverage.svg" alt="Coverage Bar" />
+    <img src="https://raw.githubusercontent.com/abhijit-karale/abhijit-karale/main/assets/coverage.svg" alt="Coverage Bar" />
     <img src="https://img.shields.io/badge/SVA%20Assertions-14%2F14%20Passing-64FFDA?style=for-the-badge&logo=checkmarx&logoColor=0A192F" />
   </div>
   <br/>
@@ -45,13 +45,13 @@
 ## 🗂️ Verification Dashboard
 
 <div align="center">
-  <img src="https://github.com/abhijit-karale/abhijit-karale/raw/main/assets/generated/verification-dashboard.svg?v=4" alt="Verification Dashboard" width="100%" />
+  <img src="https://raw.githubusercontent.com/abhijit-karale/abhijit-karale/main/assets/generated/verification-dashboard.svg?v=5" alt="Verification Dashboard" width="100%" />
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://github.com/abhijit-karale/abhijit-karale/raw/main/assets/generated/fsm-diagram.svg?v=2" alt="FSM Diagram" />
+  <img src="https://raw.githubusercontent.com/abhijit-karale/abhijit-karale/main/assets/generated/fsm-diagram.svg?v=3" alt="FSM Diagram" />
 </div>
 
 <br/>

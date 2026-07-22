@@ -3,7 +3,7 @@
     <style>
       .bg { fill: #0A192F; }
       .grid { stroke: #1c1c38; stroke-width: 1; stroke-dasharray: 2 4; opacity: 0.7; }
-      .block { fill: rgba(10, 25, 47, 0.8); stroke-width: 2; opacity: 0; animation: fade-in 0.5s forwards; }
+      .block { fill: rgba(10,25,47,0.8); stroke-width: 2; opacity: 0; animation: fade-in 0.5s forwards; }
       .b1 { stroke: #64FFDA; animation-delay: 0.2s; filter: drop-shadow(0 0 6px rgba(100,255,218,0.4)); }
       .b2 { stroke: #00d4ff; animation-delay: 0.4s; filter: drop-shadow(0 0 6px rgba(0,212,255,0.4)); }
       .b3 { stroke: #ff00ff; animation-delay: 0.6s; filter: drop-shadow(0 0 6px rgba(255,0,255,0.4)); }

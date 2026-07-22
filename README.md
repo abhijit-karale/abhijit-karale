@@ -5,7 +5,7 @@
 <div align="center">
   <br/>
   <i>
-    Passionate <b>RTL Design & Verification Engineer</b> with a strong background in embedded systems and hardware design. I specialize in <b>SystemVerilog, UVM, and AMBA protocols (AXI/APB)</b> to architect, verify, and validate complex SoC subsystems. From designing pipelined RISC-V processors to proving exhaustive formal properties with JasperGold, I am dedicated to bridging the gap between gate-level RTL and silicon reality.
+    Transitioning from 2 years of embedded firmware engineering into <b>RTL Design & Verification</b>, bringing hardware-software co-design intuition to verification closure. I specialize in <b>SystemVerilog, UVM, and AMBA protocols (AXI/APB)</b> to architect, verify, and validate complex SoC subsystems. From designing pipelined RISC-V processors to proving exhaustive formal properties with JasperGold, I am dedicated to bridging the gap between gate-level RTL and silicon reality.
   </i>
   <br/><br/>
   <div align="center">
@@ -15,8 +15,12 @@
   <br/>
 </div>
 
+> 🔭 Currently deepening expertise in: **AMS Verification**, **UVM Advanced Features (register abstraction layer, virtual sequences)**, **Low Power Verification (UPF)**
+
+<br/>
+
 <div align="center">
-    <a href="mailto:abhijitkarale8@gmail.com"><img src="https://img.shields.io/badge/Email-d5d5d5?style=for-the-badge&logo=gmail&logoColor=0A0209" /></a>
+    <a href="mailto:abhijitkarale22@gmail.com"><img src="https://img.shields.io/badge/Email-d5d5d5?style=for-the-badge&logo=gmail&logoColor=0A0209" /></a>
     <a href="https://www.linkedin.com/in/abhijit-karale-rtl-dv/"><img src="https://custom-icon-badges.demolab.com/badge/LinkedIn-0A0209?style=for-the-badge&logo=linkedin-white&logoColor=d5d5d5" /></a>
     <a href="https://leetcode.com/u/abhijitkarale8/"><img src="https://img.shields.io/badge/LeetCode-d5d5d5?style=for-the-badge&logo=leetcode&logoColor=0A0209" /></a>
     <a href="https://hdlbits.01xz.net/wiki/Special:VlgStats/Me"><img src="https://img.shields.io/badge/HDLBits-d5d5d5?style=for-the-badge&logo=hackerrank&logoColor=0A0209" /></a>
@@ -46,6 +50,14 @@
 | [UART Controller](https://github.com/abhijit-karale/uart-controller) | Configurable baud, TX/RX FSM, full TB coverage | Verilog | ✅ Verified |
 | [Synchronous FIFO](https://github.com/abhijit-karale/sync-fifo) | Parameterized sync FIFO with full/empty flags | Verilog | ✅ Verified |
 | [Sparsity-Aware MatMul Engine](https://github.com/abhijit-karale/sparsity-matmul-engine) | LLM inference accelerator, 5 submodules, patentable design | SystemVerilog | 🔧 In Progress |
+
+<br/>
+
+## 🧪 Verification Approach
+- Constrained-random stimulus generation with functional coverage closure
+- Assertion-based verification (SVA) for protocol compliance
+- Self-checking testbenches with scoreboard/reference-model architecture
+- UVM-based reusable verification environments (driver-monitor-sequencer)
 
 <br/>
 
@@ -105,33 +117,11 @@
 
 ## 📈 GitHub Telemetry & Stats
 
-
-
-<table>
-    <tr>
-        <td width="50%" valign="top">
-            <h3 align="center"> GitHub Stats </h3>
-            <div align="center">
-              <img align="center" alt="GitHub Stats" src="https://gh-readme-profile.vercel.app/api?username=abhijit-karale&theme=neon-dark&border_width=0&border_radius=15.2&hide_border=true" />
-              <br/><br/>
-              <img align="center" alt="GitHub Streak" src="https://nirzak-streak-stats.koyeb.app?user=abhijit-karale&theme=vision-friendly-dark&hide_border=true&border_radius=15.2&mode=weekly&card_width=500" />
-            </div>
-        </td>
-        <td width="50%" valign="top">
-            <h3 align="center"> 🏆 LeetCode Achievements </h3>
-            <p align="center">
-                <img src="https://leetcard.jacoblin.cool/abhijitkarale8?theme=dark&font=Nunito" alt="LeetCode Stats" width="100%" />
-            </p>
-            <br/>
-            <h3 align="center"> 🎵 Currently Listening </h3>
-            <p align="center">
-              <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=31rltdqnyssvdmgbegb7sezjsjyu&redirect=true">
-                <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=31rltdqnyssvdmgbegb7sezjsjyu&cover_image=false&theme=apple&show_offline=true&background_color=121212&interchange=true&profanity=false&hide_remaster=false&mode=dark" alt="spotify-github-profile">
-              </a>
-            </p>
-        </td>
-    </tr>
-</table>
+<div align="center">
+  <img align="center" alt="GitHub Stats" src="https://gh-readme-profile.vercel.app/api?username=abhijit-karale&theme=neon-dark&border_width=0&border_radius=15.2&hide_border=true" />
+  <br/><br/>
+  <img align="center" alt="GitHub Streak" src="https://nirzak-streak-stats.koyeb.app?user=abhijit-karale&theme=vision-friendly-dark&hide_border=true&border_radius=15.2&mode=weekly&card_width=500" />
+</div>
 
 <br/>
 

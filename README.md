@@ -4,6 +4,7 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=64FFDA&background=0A192F00&center=true&vCenter=true&width=600&lines=RTL+Design+%26+Verification+Engineer;SystemVerilog+%7C+UVM+%7C+AMBA+AXI%2FAPB;Building+Silicon-Grade+Verification+Environments" alt="Typing SVG" />
 </div>
 
+
 <div align="center">
   <br/>
   <i>

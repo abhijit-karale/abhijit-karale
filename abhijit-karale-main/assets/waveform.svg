@@ -1,10 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="850" height="100" viewBox="0 0 850 100">
   <defs>
     <style>
-      .clk { stroke: #00ffcc; stroke-width: 2; fill: none; stroke-linejoin: round; filter: drop-shadow(0 0 4px rgba(0,255,204,0.6)); stroke-dasharray: 2000; stroke-dashoffset: 2000; animation: draw 4s linear infinite; }
-      .data { stroke: #ff00ff; stroke-width: 2; fill: none; stroke-linejoin: round; filter: drop-shadow(0 0 4px rgba(255,0,255,0.6)); stroke-dasharray: 2000; stroke-dashoffset: 2000; animation: draw 4s linear infinite 0.2s; }
-      .grid { stroke: #1c1c38; stroke-width: 1; stroke-dasharray: 2 4; opacity: 0.5; }
-      .label { fill: #94a3b8; font-family: monospace; font-size: 11px; }
+      .clk { stroke: #E5B5C7; stroke-width: 2; fill: none; stroke-linejoin: round; filter: drop-shadow(0 0 4px rgba(199,123,155,0.7)); stroke-dasharray: 2000; stroke-dashoffset: 2000; animation: draw 4s linear infinite; }
+      .data { stroke: #C77B9B; stroke-width: 2; fill: none; stroke-linejoin: round; filter: drop-shadow(0 0 4px rgba(112,26,61,0.7)); stroke-dasharray: 2000; stroke-dashoffset: 2000; animation: draw 4s linear infinite 0.2s; }
+      .grid { stroke: #451126; stroke-width: 1; stroke-dasharray: 2 4; opacity: 0.6; }
+      .label { fill: #E5B5C7; font-family: monospace; font-size: 11px; font-weight: bold; }
       @keyframes draw {
         to { stroke-dashoffset: 0; }
       }

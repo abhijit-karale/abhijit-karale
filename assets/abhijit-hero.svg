@@ -1,0 +1,277 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 360" width="100%" height="100%" xml:space="preserve">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="ak_hero_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10070C"/>
+      <stop offset="45%" stop-color="#190B12"/>
+      <stop offset="85%" stop-color="#10070C"/>
+      <stop offset="100%" stop-color="#190B12"/>
+    </linearGradient>
+
+    <!-- Radial Ambient Glows -->
+    <radialGradient id="ak_hero_glow_wine" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#451126" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#10070C" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="ak_hero_glow_rose" cx="20%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#C77B9B" stop-opacity="0.30"/>
+      <stop offset="50%" stop-color="#701A3D" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#10070C" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="ak_hero_glow_orb" cx="85%" cy="35%" r="45%">
+      <stop offset="0%" stop-color="#E5B5C7" stop-opacity="0.22"/>
+      <stop offset="40%" stop-color="#701A3D" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#10070C" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Name Gradient -->
+    <linearGradient id="ak_hero_text_grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="40%" stop-color="#F8F0F3"/>
+      <stop offset="75%" stop-color="#E5B5C7"/>
+      <stop offset="100%" stop-color="#C77B9B"/>
+    </linearGradient>
+
+    <!-- Glowing Underline Gradient -->
+    <linearGradient id="ak_hero_line_grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0"/>
+      <stop offset="20%" stop-color="#701A3D"/>
+      <stop offset="50%" stop-color="#E5B5C7"/>
+      <stop offset="80%" stop-color="#701A3D"/>
+      <stop offset="100%" stop-color="#701A3D" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Traveling Light Gradient -->
+    <linearGradient id="ak_hero_pulse_grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="45%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="55%" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Filter for Glows -->
+    <filter id="ak_hero_soft_glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="ak_hero_neon_glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur1"/>
+      <feGaussianBlur stdDeviation="10" result="blur2"/>
+      <feMerge>
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="ak_hero_grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#451126" stroke-width="0.75" stroke-opacity="0.32"/>
+      <circle cx="40" cy="0" r="1" fill="#701A3D" fill-opacity="0.5"/>
+    </pattern>
+
+    <pattern id="ak_hero_subgrid" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M 8 0 L 0 0 0 8" fill="none" stroke="#701A3D" stroke-width="0.3" stroke-opacity="0.18"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .ak-mono { font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', 'Roboto Mono', Consolas, monospace; }
+    .ak-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, Helvetica, Arial, sans-serif; }
+    .ak-title { font-weight: 800; letter-spacing: -0.02em; }
+    .ak-subtitle { font-weight: 500; letter-spacing: 0.04em; }
+    .ak-badge { font-weight: 600; letter-spacing: 0.08em; font-size: 10px; }
+  </style>
+
+  <!-- Base Canvas Background -->
+  <rect width="1000" height="360" fill="url(#ak_hero_bg)"/>
+
+  <!-- Technical Grid Layers -->
+  <rect width="1000" height="360" fill="url(#ak_hero_subgrid)"/>
+  <rect width="1000" height="360" fill="url(#ak_hero_grid)"/>
+
+  <!-- Ambient Pulsing Glow Backgrounds -->
+  <rect width="1000" height="360" fill="url(#ak_hero_glow_wine)" opacity="0.85">
+    <animate attributeName="opacity" values="0.7;0.95;0.7" dur="6s" repeatCount="indefinite"/>
+  </rect>
+  <circle cx="180" cy="300" r="220" fill="url(#ak_hero_glow_rose)" opacity="0.65">
+    <animate attributeName="r" values="200;240;200" dur="8s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="860" cy="140" r="260" fill="url(#ak_hero_glow_orb)" opacity="0.6">
+    <animate attributeName="opacity" values="0.5;0.75;0.5" dur="7s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Silicon Layout & Die Corner Markings -->
+  <g stroke="#701A3D" stroke-width="1.2" opacity="0.65" fill="none">
+    <!-- Top-Left Die Align -->
+    <path d="M 24 50 L 24 24 L 50 24" />
+    <circle cx="24" cy="24" r="3" fill="#C77B9B" stroke="none"/>
+    <text x="32" y="38" fill="#C77B9B" class="ak-mono ak-badge" opacity="0.8">DIE_ORIGIN: 0x0000</text>
+
+    <!-- Top-Right Die Align -->
+    <path d="M 976 50 L 976 24 L 950 24" />
+    <circle cx="976" cy="24" r="3" fill="#C77B9B" stroke="none"/>
+    <text x="886" y="38" fill="#C77B9B" class="ak-mono ak-badge" opacity="0.8">RTL_NODE: 130nm</text>
+
+    <!-- Bottom-Left Die Align -->
+    <path d="M 24 310 L 24 336 L 50 336" />
+    <circle cx="24" cy="336" r="3" fill="#C77B9B" stroke="none"/>
+
+    <!-- Bottom-Right Die Align -->
+    <path d="M 976 310 L 976 336 L 950 336" />
+    <circle cx="976" cy="336" r="3" fill="#C77B9B" stroke="none"/>
+    <text x="878" y="330" fill="#E5B5C7" class="ak-mono ak-badge" opacity="0.8">CLK: 150MHz_LOCKED</text>
+  </g>
+
+  <!-- Architectural Circuit Trace Geometry (Background) -->
+  <g stroke="#451126" stroke-width="1" fill="none" opacity="0.55">
+    <path d="M 50 180 L 120 180 L 160 220 L 260 220" />
+    <circle cx="260" cy="220" r="2.5" fill="#701A3D"/>
+
+    <path d="M 740 80 L 800 80 L 830 110 L 950 110" />
+    <circle cx="740" cy="80" r="2.5" fill="#701A3D"/>
+
+    <path d="M 780 270 L 840 270 L 870 240 L 960 240" />
+    <circle cx="960" cy="240" r="2.5" fill="#C77B9B"/>
+  </g>
+
+  <!-- Right Orbital & Verification Convergence Rings -->
+  <g transform="translate(860, 160)">
+    <!-- Outer dashed orbit -->
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#701A3D" stroke-width="1" stroke-dasharray="6 8" opacity="0.45">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Middle radar ring with coordinate points -->
+    <circle cx="0" cy="0" r="80" fill="none" stroke="#C77B9B" stroke-width="1.2" stroke-dasharray="14 10" opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="28s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Inner telemetry ring -->
+    <circle cx="0" cy="0" r="50" fill="none" stroke="#E5B5C7" stroke-width="1" stroke-dasharray="4 4" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Crosshair reticles -->
+    <line x1="-125" y1="0" x2="125" y2="0" stroke="#701A3D" stroke-width="0.8" opacity="0.35"/>
+    <line x1="0" y1="-125" x2="0" y2="125" stroke="#701A3D" stroke-width="0.8" opacity="0.35"/>
+
+    <!-- Orbital Satellites / Clock Markers -->
+    <circle cx="80" cy="0" r="3.5" fill="#F8F0F3" filter="url(#ak_hero_soft_glow)">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="28s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="-50" cy="0" r="2.5" fill="#C77B9B">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="-360" dur="18s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Silicon SoC Center Symbol -->
+    <rect x="-16" y="-16" width="32" height="32" rx="4" fill="#190B12" stroke="#C77B9B" stroke-width="1.5"/>
+    <text x="0" y="4" text-anchor="middle" fill="#F8F0F3" class="ak-mono" font-size="9" font-weight="700">SoC</text>
+  </g>
+
+  <!-- Animated Silicon Digital Waveform Stream (Mid-canvas) -->
+  <g transform="translate(60, 68)" opacity="0.85">
+    <!-- Waveform background channel -->
+    <rect x="0" y="0" width="320" height="24" rx="4" fill="#190B12" stroke="#451126" stroke-width="0.8"/>
+    
+    <!-- Clock Signal Trace (CLK) -->
+    <path d="M 12 18 L 24 18 L 24 6 L 36 6 L 36 18 L 48 18 L 48 6 L 60 6 L 60 18 L 72 18 L 72 6 L 84 6 L 84 18 L 96 18 L 96 6 L 108 6 L 108 18 L 120 18" 
+          fill="none" stroke="#C77B9B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="126" y="15" fill="#E5B5C7" class="ak-mono ak-badge">CLK_SYS</text>
+
+    <!-- Handshake Signal Trace (VALID / READY) -->
+    <path d="M 188 18 L 214 18 L 220 6 L 260 6 L 266 18 L 296 18" 
+          fill="none" stroke="#701A3D" stroke-width="1.6" stroke-linecap="round"/>
+    <!-- Animated pulse dot traveling on handshake -->
+    <circle cx="188" cy="18" r="2.5" fill="#FFFFFF" filter="url(#ak_hero_soft_glow)">
+      <animate attributeName="cx" values="188;214;220;260;266;296;296" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="18;18;6;6;18;18;18" dur="3.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;1;1;0;0" dur="3.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="302" y="15" fill="#C77B9B" class="ak-mono" font-size="8">AXI_ACK</text>
+  </g>
+
+  <!-- KICKER / CONTEXT BADGE -->
+  <g transform="translate(60, 122)">
+    <rect x="0" y="0" width="340" height="24" rx="12" fill="#190B12" stroke="#701A3D" stroke-width="1"/>
+    <!-- Glowing status indicator -->
+    <circle cx="14" cy="12" r="4" fill="#C77B9B" filter="url(#ak_hero_soft_glow)">
+      <animate attributeName="fill" values="#C77B9B;#FFFFFF;#C77B9B" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="14" cy="12" r="7" fill="none" stroke="#C77B9B" stroke-width="1" opacity="0.5">
+      <animate attributeName="r" values="4;8;4" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0;0.7" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="26" y="16" fill="#E5B5C7" class="ak-mono ak-badge">SYSTEM-LEVEL SILICON &amp; FIRMWARE</text>
+  </g>
+
+  <!-- MAIN NAME -->
+  <g transform="translate(60, 185)">
+    <text x="0" y="0" fill="url(#ak_hero_text_grad)" class="ak-sans ak-title" font-size="52" filter="url(#ak_hero_soft_glow)">
+      ABHIJIT KARALE
+    </text>
+  </g>
+
+  <!-- GLOWING UNDERLINE WITH MOVING LIGHT RAY -->
+  <g transform="translate(60, 204)">
+    <!-- Base gradient rule line -->
+    <rect x="0" y="0" width="620" height="2.5" rx="1.25" fill="url(#ak_hero_line_grad)"/>
+    <!-- Animated traveling highlight on underline -->
+    <rect x="0" y="0" width="120" height="2.5" rx="1.25" fill="url(#ak_hero_pulse_grad)">
+      <animate attributeName="x" values="-120;620" dur="3.8s" repeatCount="indefinite" ease="ease-in-out"/>
+    </rect>
+  </g>
+
+  <!-- ROLE LINE -->
+  <g transform="translate(60, 238)">
+    <text x="0" y="0" fill="#F8F0F3" class="ak-sans ak-subtitle" font-size="20">
+      Embedded Firmware Engineer <tspan fill="#701A3D" font-weight="700">|</tspan> <tspan fill="#E5B5C7">RTL Design &amp; Verification Engineer</tspan>
+    </text>
+  </g>
+
+  <!-- ENGINEERING PROGRESSION TRAJECTORY -->
+  <g transform="translate(60, 268)">
+    <text x="0" y="0" fill="#C77B9B" class="ak-mono" font-size="12" letter-spacing="0.05em">
+      EMBEDDED SYSTEMS <tspan fill="#701A3D">→</tspan> DIGITAL DESIGN <tspan fill="#701A3D">→</tspan> RTL &amp; UVM VERIFICATION <tspan fill="#701A3D">→</tspan> SoC / ASIC
+    </text>
+  </g>
+
+  <!-- TELEMETRY BADGES / PILLS ROW -->
+  <g transform="translate(60, 298)">
+    <!-- Pill 1: RISC-V Pipeline -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="158" height="26" rx="6" fill="#190B12" stroke="#451126" stroke-width="1"/>
+      <circle cx="12" cy="13" r="3" fill="#701A3D"/>
+      <text x="22" y="17" fill="#F8F0F3" class="ak-mono ak-badge">RV32I 5-STAGE CORE</text>
+    </g>
+
+    <!-- Pill 2: Verification Flow -->
+    <g transform="translate(166, 0)">
+      <rect x="0" y="0" width="168" height="26" rx="6" fill="#190B12" stroke="#451126" stroke-width="1"/>
+      <circle cx="12" cy="13" r="3" fill="#C77B9B"/>
+      <text x="22" y="17" fill="#F8F0F3" class="ak-mono ak-badge">UVM + SVA FORMAL FPV</text>
+    </g>
+
+    <!-- Pill 3: Embedded Platform -->
+    <g transform="translate(342, 0)">
+      <rect x="0" y="0" width="180" height="26" rx="6" fill="#190B12" stroke="#451126" stroke-width="1"/>
+      <circle cx="12" cy="13" r="3" fill="#E5B5C7"/>
+      <text x="22" y="17" fill="#F8F0F3" class="ak-mono ak-badge">STM32 / ARM CORTEX-M</text>
+    </g>
+
+    <!-- Pill 4: Hardware Bring-Up -->
+    <g transform="translate(530, 0)">
+      <rect x="0" y="0" width="176" height="26" rx="6" fill="#190B12" stroke="#451126" stroke-width="1"/>
+      <circle cx="12" cy="13" r="3" fill="#701A3D"/>
+      <text x="22" y="17" fill="#F8F0F3" class="ak-mono ak-badge">MULTI-LAYER PCB DEBUG</text>
+    </g>
+  </g>
+
+  <!-- Fine Outer Frame -->
+  <rect x="0.5" y="0.5" width="999" height="359" rx="1" fill="none" stroke="#451126" stroke-width="1" opacity="0.75"/>
+</svg>

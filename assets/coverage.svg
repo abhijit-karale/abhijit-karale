@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="30" viewBox="0 0 300 30">
+  <defs>
+    <linearGradient id="ak_cov_bar_grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#701A3D"/>
+      <stop offset="60%" stop-color="#C77B9B"/>
+      <stop offset="100%" stop-color="#E5B5C7"/>
+    </linearGradient>
+    <style>
+      .bg { fill: #190B12; stroke: #451126; stroke-width: 1; rx: 4; }
+      .bar { fill: url(#ak_cov_bar_grad); rx: 4; animation: fillBar 1.5s ease-out forwards; }
+      .text { fill: #F8F0F3; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 11px; font-weight: 600; dominant-baseline: middle; }
+      .pct { fill: #10070C; font-family: monospace; font-size: 11px; font-weight: 800; dominant-baseline: middle; }
+      
+      @keyframes fillBar {
+        from { width: 0; }
+        to { width: 285px; } /* 95% of 300 */
+      }
+    </style>
+  </defs>
+
+  <!-- Background track -->
+  <rect x="0" y="5" width="300" height="20" class="bg" />
+  
+  <!-- Fill bar -->
+  <rect x="0" y="5" width="0" height="20" class="bar" />
+  
+  <!-- Labels -->
+  <text x="12" y="16" class="text">Functional Coverage</text>
+  <text x="252" y="16" class="pct">95%+</text>
+</svg>

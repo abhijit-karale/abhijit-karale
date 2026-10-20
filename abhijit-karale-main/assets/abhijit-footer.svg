@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 140" width="100%" height="100%" xml:space="preserve">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="ak_footer_bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10070C"/>
+      <stop offset="50%" stop-color="#190B12"/>
+      <stop offset="100%" stop-color="#10070C"/>
+    </linearGradient>
+
+    <!-- Center Accent Glow -->
+    <radialGradient id="ak_footer_glow" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#701A3D" stop-opacity="0.45"/>
+      <stop offset="55%" stop-color="#451126" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#10070C" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Waveform Glow Filter -->
+    <filter id="ak_footer_glow_filter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Technical Grid Pattern -->
+    <pattern id="ak_footer_grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#451126" stroke-width="0.6" stroke-opacity="0.25"/>
+    </pattern>
+
+    <!-- Traveling Pulse Gradient -->
+    <linearGradient id="ak_footer_pulse" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#E5B5C7" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    .ak-foot-mono { font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', 'Roboto Mono', Consolas, monospace; }
+    .ak-foot-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, Helvetica, Arial, sans-serif; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1000" height="140" fill="url(#ak_footer_bg)"/>
+  <rect width="1000" height="140" fill="url(#ak_footer_grid)"/>
+  <rect width="1000" height="140" fill="url(#ak_footer_glow)"/>
+
+  <!-- Left & Right Circuit Geometry Traces -->
+  <g stroke="#701A3D" stroke-width="1" fill="none" opacity="0.6">
+    <!-- Left bus lines -->
+    <path d="M 30 70 L 140 70 L 170 40 L 260 40" />
+    <circle cx="30" cy="70" r="2.5" fill="#C77B9B"/>
+    <circle cx="260" cy="40" r="2.5" fill="#701A3D"/>
+
+    <path d="M 60 100 L 160 100 L 190 70 L 240 70" stroke="#451126"/>
+
+    <!-- Right bus lines -->
+    <path d="M 970 70 L 860 70 L 830 40 L 740 40" />
+    <circle cx="970" cy="70" r="2.5" fill="#C77B9B"/>
+    <circle cx="740" cy="40" r="2.5" fill="#701A3D"/>
+
+    <path d="M 940 100 L 840 100 L 810 70 L 760 70" stroke="#451126"/>
+  </g>
+
+  <!-- Left Radar Target / Minimal Orbital Arc -->
+  <g transform="translate(100, 70)" opacity="0.45">
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#C77B9B" stroke-width="0.8" stroke-dasharray="4 6">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#701A3D" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="2" fill="#E5B5C7"/>
+  </g>
+
+  <!-- Right Radar Target / Minimal Orbital Arc -->
+  <g transform="translate(900, 70)" opacity="0.45">
+    <circle cx="0" cy="0" r="32" fill="none" stroke="#C77B9B" stroke-width="0.8" stroke-dasharray="4 6">
+      <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="0" cy="0" r="16" fill="none" stroke="#701A3D" stroke-width="0.8"/>
+    <circle cx="0" cy="0" r="2" fill="#E5B5C7"/>
+  </g>
+
+  <!-- Animated Waveform Bus (Center Span) -->
+  <g transform="translate(300, 26)" opacity="0.75">
+    <!-- Clock pulse wave -->
+    <path d="M 0 10 L 20 10 L 20 0 L 40 0 L 40 10 L 60 10 L 60 0 L 80 0 L 80 10 L 100 10 L 100 0 L 120 0 L 120 10 L 140 10 L 140 0 L 160 0 L 160 10 L 180 10 L 180 0 L 200 0 L 200 10 L 220 10 L 220 0 L 240 0 L 240 10 L 260 10 L 260 0 L 280 0 L 280 10 L 300 10 L 300 0 L 320 0 L 320 10 L 340 10 L 340 0 L 360 0 L 360 10 L 380 10 L 380 0 L 400 0" 
+          fill="none" stroke="#701A3D" stroke-width="1.2" stroke-linecap="round"/>
+    
+    <!-- Traveling highlight along clock wave -->
+    <circle cx="0" cy="10" r="2.5" fill="#F8F0F3" filter="url(#ak_footer_glow_filter)">
+      <animate attributeName="cx" values="0;400" dur="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;1;0" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Central Title Pill & Primary Mantra -->
+  <g transform="translate(500, 68)">
+    <!-- Pill boundary box -->
+    <rect x="-220" y="-18" width="440" height="36" rx="18" fill="#190B12" stroke="#701A3D" stroke-width="1.2" filter="url(#ak_footer_glow_filter)"/>
+    
+    <!-- Animated wine border highlight pulse -->
+    <rect x="-220" y="-18" width="440" height="36" rx="18" fill="none" stroke="#C77B9B" stroke-width="1.2" opacity="0.3">
+      <animate attributeName="opacity" values="0.1;0.6;0.1" dur="3s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Primary Phrase -->
+    <text x="0" y="5" text-anchor="middle" fill="#F8F0F3" class="ak-foot-mono" font-size="14" font-weight="700" letter-spacing="0.22em">
+      BUILD <tspan fill="#C77B9B">•</tspan> VERIFY <tspan fill="#C77B9B">•</tspan> DEBUG <tspan fill="#C77B9B">•</tspan> REPEAT
+    </text>
+  </g>
+
+  <!-- Subtitle Line: Technical Ethos -->
+  <g transform="translate(500, 114)">
+    <text x="0" y="0" text-anchor="middle" fill="#C77B9B" class="ak-foot-mono" font-size="9.5" letter-spacing="0.12em" opacity="0.85">
+      SILICON-GRADE VERIFICATION • PRODUCTION EMBEDDED SYSTEMS • BRIDGING FIRMWARE TO RTL
+    </text>
+  </g>
+
+  <!-- Subtle Top & Bottom Border Lines -->
+  <line x1="0" y1="0.5" x2="1000" y2="0.5" stroke="#451126" stroke-width="1" opacity="0.7"/>
+  <line x1="0" y1="139.5" x2="1000" y2="139.5" stroke="#451126" stroke-width="1" opacity="0.7"/>
+</svg>

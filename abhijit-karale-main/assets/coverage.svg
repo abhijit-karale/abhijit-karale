@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="30" viewBox="0 0 300 30">
+  <defs>
+    <style>
+      .bg { fill: #0a192f; rx: 4; }
+      .bar { fill: #64FFDA; rx: 4; animation: fillBar 1.5s ease-out forwards; }
+      .text { fill: #f1f5f9; font-family: sans-serif; font-size: 12px; font-weight: bold; dominant-baseline: middle; }
+      .pct { fill: #0a192f; font-family: sans-serif; font-size: 11px; font-weight: bold; dominant-baseline: middle; }
+      
+      @keyframes fillBar {
+        from { width: 0; }
+        to { width: 285px; } /* 95% of 300 */
+      }
+    </style>
+  </defs>
+
+  <!-- Background track -->
+  <rect x="0" y="5" width="300" height="20" class="bg" />
+  
+  <!-- Fill bar -->
+  <rect x="0" y="5" width="0" height="20" class="bar" />
+  
+  <!-- Labels -->
+  <text x="10" y="16" class="text">Functional Coverage</text>
+  <text x="260" y="16" class="pct">95%</text>
+</svg>

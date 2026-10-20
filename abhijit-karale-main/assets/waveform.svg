@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="850" height="100" viewBox="0 0 850 100">
+  <defs>
+    <style>
+      .clk { stroke: #00ffcc; stroke-width: 2; fill: none; stroke-linejoin: round; filter: drop-shadow(0 0 4px rgba(0,255,204,0.6)); stroke-dasharray: 2000; stroke-dashoffset: 2000; animation: draw 4s linear infinite; }
+      .data { stroke: #ff00ff; stroke-width: 2; fill: none; stroke-linejoin: round; filter: drop-shadow(0 0 4px rgba(255,0,255,0.6)); stroke-dasharray: 2000; stroke-dashoffset: 2000; animation: draw 4s linear infinite 0.2s; }
+      .grid { stroke: #1c1c38; stroke-width: 1; stroke-dasharray: 2 4; opacity: 0.5; }
+      .label { fill: #94a3b8; font-family: monospace; font-size: 11px; }
+      @keyframes draw {
+        to { stroke-dashoffset: 0; }
+      }
+    </style>
+  </defs>
+
+  <rect width="850" height="100" fill="transparent" />
+  
+  <!-- Grid -->
+  <path class="grid" d="M 50 10 L 50 90 M 150 10 L 150 90 M 250 10 L 250 90 M 350 10 L 350 90 M 450 10 L 450 90 M 550 10 L 550 90 M 650 10 L 650 90 M 750 10 L 750 90" />
+
+  <!-- Labels -->
+  <text x="10" y="35" class="label">clk</text>
+  <text x="10" y="75" class="label">data</text>
+
+  <!-- Clock signal (period = 100px) -->
+  <path class="clk" d="M 50 40 L 80 40 L 80 20 L 130 20 L 130 40 L 180 40 L 180 20 L 230 20 L 230 40 L 280 40 L 280 20 L 330 20 L 330 40 L 380 40 L 380 20 L 430 20 L 430 40 L 480 40 L 480 20 L 530 20 L 530 40 L 580 40 L 580 20 L 630 20 L 630 40 L 680 40 L 680 20 L 730 20 L 730 40 L 780 40 L 780 20 L 830 20 L 830 40" />
+
+  <!-- Data signal (toggles on rising edge of clk) -->
+  <path class="data" d="M 50 80 L 75 80 L 85 60 L 175 60 L 185 80 L 275 80 L 285 60 L 475 60 L 485 80 L 575 80 L 585 60 L 775 60 L 785 80 L 830 80" />
+</svg>

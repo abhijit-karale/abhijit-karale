@@ -107,15 +107,15 @@ projects:
       status: "WIP"
 
 theme:
-  void: "#050510"
-  nebula: "#0a0a1a"
-  star_dust: "#1c1c38"
-  synapse_cyan: "#00ffcc"
-  dendrite_violet: "#ff00ff"
-  axon_amber: "#ffea00"
-  text_bright: "#f1f5f9"
-  text_dim: "#94a3b8"
-  text_faint: "#64748b"
+  void: "#10070C"
+  nebula: "#190B12"
+  star_dust: "#451126"
+  synapse_cyan: "#64FFDA"
+  dendrite_violet: "#E5B5C7"
+  axon_amber: "#C77B9B"
+  text_bright: "#FFFFFF"
+  text_dim: "#E5B5C7"
+  text_faint: "#701A3D"
 
 stats:
   metrics:

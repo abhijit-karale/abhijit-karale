@@ -1,0 +1,208 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="100%" height="100%" xml:space="preserve">
+<defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg_3d" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E050A"/>
+      <stop offset="50%" stop-color="#160810"/>
+      <stop offset="100%" stop-color="#0E050A"/>
+    </linearGradient>
+
+    <!-- Radial Glows -->
+    <radialGradient id="glow_l3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E5B5C7" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#701A3D" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0E050A" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glow_cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#64FFDA" stop-opacity="0.2"/>
+      <stop offset="60%" stop-color="#0E050A" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Top Face Gradients -->
+    <linearGradient id="top_l1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#240D1A"/>
+      <stop offset="100%" stop-color="#160710"/>
+    </linearGradient>
+
+    <linearGradient id="top_l2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A1124"/>
+      <stop offset="100%" stop-color="#1E0A14"/>
+    </linearGradient>
+
+    <linearGradient id="top_l3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#551430"/>
+      <stop offset="100%" stop-color="#280C1A"/>
+    </linearGradient>
+
+    <!-- Filter for Glows -->
+    <filter id="neon_glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="drop_blur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+
+    <!-- Background Grid -->
+    <pattern id="grid_iso" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#701A3D" stroke-width="0.5" stroke-opacity="0.18"/>
+    </pattern>
+  </defs>
+
+  <style>
+    .ak-mono { font-family: 'SF Mono', 'Cascadia Code', 'Fira Code', 'Roboto Mono', Consolas, monospace; }
+    .ak-sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', Roboto, sans-serif; }
+    .txt-tag { font-size: 10px; font-weight: 700; letter-spacing: 0.1em; }
+    .txt-title { font-size: 15px; font-weight: 800; fill: #FFFFFF; }
+    .txt-desc { font-size: 11.5px; font-weight: 400; fill: #E5B5C7; }
+    .txt-code { font-size: 11px; font-weight: 600; fill: #F8F0F3; }
+    .pulse-bus { stroke-dasharray: 8 6; animation: dash 2.5s linear infinite; }
+    @keyframes dash { to { stroke-dashoffset: -28; } }
+  </style>
+
+  <!-- Background Base -->
+  <rect width="100%" height="100%" fill="url(#bg_3d)"/>
+  <rect width="100%" height="100%" fill="url(#grid_iso)"/>
+
+  <!-- Top Ambient Glow -->
+  <circle cx="360" cy="180" r="220" fill="url(#glow_l3)"/>
+  <circle cx="280" cy="130" r="140" fill="url(#glow_cyan)"/>
+
+  <!-- Header Banner Section in SVG -->
+  <g transform="translate(36, 42)">
+    <rect x="0" y="0" width="12" height="12" fill="#701A3D" rx="2" stroke="#C77B9B" stroke-width="1"/>
+    <rect x="3" y="3" width="6" height="6" fill="#64FFDA" rx="1"/>
+    <text x="24" y="10" fill="#64FFDA" class="ak-mono txt-tag">3D SILICON ARCHITECTURE &amp; VERIFICATION STACK</text>
+    <text x="0" y="34" class="ak-sans txt-title" font-size="20">Cross-Layer Hardware Intuition: Firmware ➔ RTL ➔ Verification</text>
+    <text x="0" y="52" class="ak-sans txt-desc" fill="#C77B9B">Co-designing digital microarchitectures from bare-metal bring-up to silicon-grade UVM formal closure.</text>
+  </g>
+
+  <line x1="360.0" y1="275.0" x2="360.0" y2="19.0" stroke="#701A3D" stroke-width="2" opacity="0.45"/>
+  <line x1="360.0" y1="275.0" x2="360.0" y2="19.0" stroke="#E5B5C7" stroke-width="1.2" class="pulse-bus" opacity="0.8"/>
+  <line x1="541.9" y1="380.0" x2="541.9" y2="124.0" stroke="#701A3D" stroke-width="2" opacity="0.45"/>
+  <line x1="541.9" y1="380.0" x2="541.9" y2="124.0" stroke="#E5B5C7" stroke-width="1.2" class="pulse-bus" opacity="0.8"/>
+  <line x1="360.0" y1="485.0" x2="360.0" y2="229.0" stroke="#701A3D" stroke-width="2" opacity="0.45"/>
+  <line x1="360.0" y1="485.0" x2="360.0" y2="229.0" stroke="#E5B5C7" stroke-width="1.2" class="pulse-bus" opacity="0.8"/>
+  <line x1="178.1" y1="380.0" x2="178.1" y2="124.0" stroke="#701A3D" stroke-width="2" opacity="0.45"/>
+  <line x1="178.1" y1="380.0" x2="178.1" y2="124.0" stroke="#E5B5C7" stroke-width="1.2" class="pulse-bus" opacity="0.8"/>
+  <!-- Central 3D Optical Bus -->
+  <line x1="360.0" y1="380.0" x2="360.0" y2="124.0" stroke="#64FFDA" stroke-width="2.5" filter="url(#neon_glow)" opacity="0.85"/>
+  <line x1="360.0" y1="380.0" x2="360.0" y2="124.0" stroke="#FFFFFF" stroke-width="1" class="pulse-bus"/>
+  <!-- LAYER 1 (BASE) -->
+  <g id="layer1">
+<polygon points="360.0,258.0 585.2,388.0 360.0,518.0 134.8,388.0" fill="#070305" opacity="0.6" filter="url(#drop_blur)"/>
+<polygon points="152.2,364.0 360.0,484.0 360.0,500.0 152.2,380.0" fill="#14060E" stroke="#451126" stroke-width="0.8"/>
+<polygon points="567.8,364.0 360.0,484.0 360.0,500.0 567.8,380.0" fill="#0F040A" stroke="#451126" stroke-width="0.8"/>
+<polygon points="360.0,244.0 567.8,364.0 360.0,484.0 152.2,364.0" fill="url(#top_l1)" stroke="#701A3D" stroke-width="1.2"/>
+    <polyline points="360.0,304.0 412.0,334.0 360.0,364.0 412.0,394.0" fill="none" stroke="#C77B9B" stroke-width="1.2" opacity="0.6"/>
+    <circle cx="360.0" cy="304.0" r="2" fill="#E5B5C7"/>
+    <circle cx="412.0" cy="394.0" r="2" fill="#64FFDA"/>
+    <polygon points="360.0,330.0 412.0,360.0 360.0,390.0 308.0,360.0" fill="#2B0E1D" stroke="#701A3D" stroke-width="1"/>
+    <text x="360.0" y="362.0" fill="#E5B5C7" class="ak-mono" font-size="8.5" font-weight="700" text-anchor="middle">STM32 / MCU</text>
+  </g>
+  <!-- LAYER 2 (MID) -->
+  <g id="layer2">
+<polygon points="360.0,148.0 585.2,278.0 360.0,408.0 134.8,278.0" fill="#070305" opacity="0.6" filter="url(#drop_blur)"/>
+<polygon points="152.2,254.0 360.0,374.0 360.0,390.0 152.2,270.0" fill="#220A15" stroke="#451126" stroke-width="0.8"/>
+<polygon points="567.8,254.0 360.0,374.0 360.0,390.0 567.8,270.0" fill="#19060F" stroke="#451126" stroke-width="0.8"/>
+<polygon points="360.0,134.0 567.8,254.0 360.0,374.0 152.2,254.0" fill="url(#top_l2)" stroke="#C77B9B" stroke-width="1.2"/>
+    <circle cx="329.7" cy="213.5" r="6" fill="#701A3D" stroke="#E5B5C7" stroke-width="1"/>
+    <text x="329.7" y="216.0" fill="#F8F0F3" class="ak-mono" font-size="6.5" font-weight="800" text-anchor="middle">IF</text>
+    <circle cx="355.7" cy="228.5" r="6" fill="#701A3D" stroke="#E5B5C7" stroke-width="1"/>
+    <text x="355.7" y="231.0" fill="#F8F0F3" class="ak-mono" font-size="6.5" font-weight="800" text-anchor="middle">ID</text>
+    <circle cx="381.7" cy="243.5" r="6" fill="#701A3D" stroke="#E5B5C7" stroke-width="1"/>
+    <text x="381.7" y="246.0" fill="#F8F0F3" class="ak-mono" font-size="6.5" font-weight="800" text-anchor="middle">EX</text>
+    <circle cx="407.6" cy="258.5" r="6" fill="#701A3D" stroke="#E5B5C7" stroke-width="1"/>
+    <text x="407.6" y="261.0" fill="#F8F0F3" class="ak-mono" font-size="6.5" font-weight="800" text-anchor="middle">MEM</text>
+    <circle cx="433.6" cy="273.5" r="6" fill="#701A3D" stroke="#E5B5C7" stroke-width="1"/>
+    <text x="433.6" y="276.0" fill="#F8F0F3" class="ak-mono" font-size="6.5" font-weight="800" text-anchor="middle">WB</text>
+    <line x1="329.7" y1="213.5" x2="433.6" y2="273.5" stroke="#E5B5C7" stroke-width="1" stroke-dasharray="2 2" opacity="0.7"/>
+    <polygon points="321.0,238.5 381.7,273.5 351.3,291.0 290.7,256.0" fill="#3D1225" stroke="#C77B9B" stroke-width="1"/>
+    <text x="335.8" y="267.0" fill="#FFFFFF" class="ak-mono" font-size="8.5" font-weight="700" text-anchor="middle">AMBA APB / AXI</text>
+  </g>
+  <!-- LAYER 3 (TOP) -->
+  <g id="layer3">
+<polygon points="360.0,38.0 585.2,168.0 360.0,298.0 134.8,168.0" fill="#070305" opacity="0.6" filter="url(#drop_blur)"/>
+<polygon points="152.2,144.0 360.0,264.0 360.0,280.0 152.2,160.0" fill="#330D1E" stroke="#451126" stroke-width="0.8"/>
+<polygon points="567.8,144.0 360.0,264.0 360.0,280.0 567.8,160.0" fill="#240714" stroke="#451126" stroke-width="0.8"/>
+<polygon points="360.0,24.0 567.8,144.0 360.0,264.0 152.2,144.0" fill="url(#top_l3)" stroke="#E5B5C7" stroke-width="1.2"/>
+    <polygon points="360.0,92.0 446.6,142.0 360.0,192.0 273.4,142.0" fill="none" stroke="#64FFDA" stroke-width="1.5" stroke-dasharray="6 4" filter="url(#neon_glow)"/>
+    <circle cx="360.0" cy="92.0" r="7" fill="#14060E" stroke="#64FFDA" stroke-width="1.2"/>
+    <text x="360.0" y="95.0" fill="#64FFDA" class="ak-mono" font-size="7" font-weight="800" text-anchor="middle">SEQ</text>
+    <circle cx="446.6" cy="142.0" r="7" fill="#14060E" stroke="#64FFDA" stroke-width="1.2"/>
+    <text x="446.6" y="145.0" fill="#64FFDA" class="ak-mono" font-size="7" font-weight="800" text-anchor="middle">DRV</text>
+    <circle cx="360.0" cy="192.0" r="7" fill="#14060E" stroke="#64FFDA" stroke-width="1.2"/>
+    <text x="360.0" y="195.0" fill="#64FFDA" class="ak-mono" font-size="7" font-weight="800" text-anchor="middle">MON</text>
+    <circle cx="273.4" cy="142.0" r="7" fill="#14060E" stroke="#64FFDA" stroke-width="1.2"/>
+    <text x="273.4" y="145.0" fill="#64FFDA" class="ak-mono" font-size="7" font-weight="800" text-anchor="middle">SCB</text>
+    <polygon points="360.0,118.0 398.1,140.0 360.0,162.0 321.9,140.0" fill="#701A3D" stroke="#64FFDA" stroke-width="1.2"/>
+    <text x="360.0" y="142.0" fill="#FFFFFF" class="ak-mono" font-size="8" font-weight="800" text-anchor="middle">SVA PROOF</text>
+  </g>
+
+    <!-- CARD 3 (TOP LAYER) -->
+    <g transform="translate(550, 154.0)">
+      <line x1="-30" y1="50" x2="0" y2="50" stroke="#64FFDA" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="-30" cy="50" r="3" fill="#64FFDA"/>
+      <rect x="0" y="0" width="370" height="100" rx="8" fill="#180A13" stroke="#64FFDA" stroke-width="1.2" opacity="0.95"/>
+      <rect x="12" y="12" width="70" height="18" rx="4" fill="#701A3D"/>
+      <text x="47" y="24" fill="#64FFDA" class="ak-mono txt-tag" text-anchor="middle">LAYER 03</text>
+      <rect x="90" y="12" width="130" height="18" rx="4" fill="#14060E" stroke="#64FFDA" stroke-width="0.8"/>
+      <text x="155" y="24" fill="#FFFFFF" class="ak-mono txt-tag" text-anchor="middle">UVM &amp; FORMAL SIGNOFF</text>
+      <rect x="230" y="12" width="76" height="18" rx="4" fill="#0D2E26"/>
+      <text x="268" y="24" fill="#64FFDA" class="ak-mono txt-tag" text-anchor="middle">PASS 95%+</text>
+      
+      <text x="14" y="52" class="ak-sans txt-title" font-size="13">Design Verification &amp; JasperGold FPV</text>
+      <text x="14" y="70" class="ak-mono txt-desc" fill="#E5B5C7">• UVM 1.2 Testbenches (Drivers, Monitors, Scoreboards)</text>
+      <text x="14" y="86" class="ak-mono txt-desc" fill="#C77B9B">• Cadence Xcelium Functional Coverage | SVA Formal Proofs</text>
+    </g>
+    
+
+    <!-- CARD 2 (MID LAYER) -->
+    <g transform="translate(550, 274.0)">
+      <line x1="-30" y1="42" x2="0" y2="42" stroke="#E5B5C7" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="-30" cy="42" r="3" fill="#E5B5C7"/>
+      <rect x="0" y="0" width="370" height="95" rx="8" fill="#180A13" stroke="#701A3D" stroke-width="1.2" opacity="0.95"/>
+      <rect x="12" y="12" width="70" height="18" rx="4" fill="#701A3D"/>
+      <text x="47" y="24" fill="#E5B5C7" class="ak-mono txt-tag" text-anchor="middle">LAYER 02</text>
+      <rect x="90" y="12" width="145" height="18" rx="4" fill="#14060E" stroke="#701A3D" stroke-width="0.8"/>
+      <text x="162" y="24" fill="#FFFFFF" class="ak-mono txt-tag" text-anchor="middle">RTL MICROARCHITECTURE</text>
+      <rect x="245" y="12" width="80" height="18" rx="4" fill="#3D1225"/>
+      <text x="285" y="24" fill="#E5B5C7" class="ak-mono txt-tag" text-anchor="middle">RV32I CORE</text>
+      
+      <text x="14" y="50" class="ak-sans txt-title" font-size="13">Digital Design &amp; Bus Protocols</text>
+      <text x="14" y="68" class="ak-mono txt-desc" fill="#E5B5C7">• 5-Stage RV32I Pipelined Core with Forwarding &amp; Hazard Unit</text>
+      <text x="14" y="84" class="ak-mono txt-desc" fill="#C77B9B">• AMBA-APB &amp; AXI4-Lite Slaves | Parameterizable CDC FIFOs</text>
+    </g>
+    
+
+    <!-- CARD 1 (BASE LAYER) -->
+    <g transform="translate(550, 384.0)">
+      <line x1="-30" y1="42" x2="0" y2="42" stroke="#C77B9B" stroke-width="1.2" stroke-dasharray="3 3"/>
+      <circle cx="-30" cy="42" r="3" fill="#C77B9B"/>
+      <rect x="0" y="0" width="370" height="95" rx="8" fill="#180A13" stroke="#451126" stroke-width="1.2" opacity="0.95"/>
+      <rect x="12" y="12" width="70" height="18" rx="4" fill="#451126"/>
+      <text x="47" y="24" fill="#C77B9B" class="ak-mono txt-tag" text-anchor="middle">LAYER 01</text>
+      <rect x="90" y="12" width="135" height="18" rx="4" fill="#14060E" stroke="#451126" stroke-width="0.8"/>
+      <text x="157" y="24" fill="#FFFFFF" class="ak-mono txt-tag" text-anchor="middle">EMBEDDED PLATFORM</text>
+      <rect x="235" y="12" width="85" height="18" rx="4" fill="#3D1225"/>
+      <text x="277" y="24" fill="#F59E0B" class="ak-mono txt-tag" text-anchor="middle">2+ YRS PROD</text>
+      
+      <text x="14" y="50" class="ak-sans txt-title" font-size="13">Firmware, Peripherals &amp; Multi-Layer Bring-Up</text>
+      <text x="14" y="68" class="ak-mono txt-desc" fill="#E5B5C7">• STM32, ARM Cortex-M, FreeRTOS Preemptive Multitasking</text>
+      <text x="14" y="84" class="ak-mono txt-desc" fill="#C77B9B">• UART/SPI/I2C Drivers • Multi-Layer PCB &amp; DSO/LA Diagnostics</text>
+    </g>
+    
+
+  <g transform="translate(36, 500)">
+    <rect x="0" y="0" width="888" height="26" rx="5" fill="#14060E" stroke="#451126" stroke-width="1"/>
+    <circle cx="16" cy="13" r="4" fill="#64FFDA" filter="url(#neon_glow)"/>
+    <text x="28" y="17" fill="#64FFDA" class="ak-mono" font-size="9.5" font-weight="700">STATUS: VERIFICATION CLOSURE READY</text>
+    <text x="320" y="17" fill="#E5B5C7" class="ak-mono" font-size="9.5">CADENCE XCELIUM • JASPERGOLD FPV • SYSTEMVERILOG UVM 1.2 • SKY130 FLOW</text>
+    <text x="850" y="17" fill="#C77B9B" class="ak-mono" font-size="9.5" text-anchor="end">DIE_TOPOLOGY: 3D_STACK</text>
+  </g>
+</svg>

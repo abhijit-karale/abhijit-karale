@@ -44,7 +44,7 @@ def generate(args):
         config_path = os.path.join(os.path.dirname(__file__), "..", "config.yml")
 
     try:
-        with open(config_path, "r") as f:
+        with open(config_path, "r", encoding="utf-8") as f:
             config = yaml.safe_load(f)
     except FileNotFoundError:
         if demo:
